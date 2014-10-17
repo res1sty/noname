@@ -1,0 +1,209 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:noname-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "12 oct 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_6 P_LFO
+U 1 1 543A8A5E
+P 4900 1700
+F 0 "P_LFO" V 4850 1700 60  0000 C CNN
+F 1 "CONN_6" V 4950 1700 60  0000 C CNN
+F 2 "" H 4900 1700 60  0000 C CNN
+F 3 "" H 4900 1700 60  0000 C CNN
+	1    4900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U1
+U 1 1 543A8CC9
+P 3350 1700
+F 0 "U1" H 3400 1900 60  0000 C CNN
+F 1 "LM324" H 3500 1500 50  0000 C CNN
+F 2 "" H 3350 1700 60  0000 C CNN
+F 3 "" H 3350 1700 60  0000 C CNN
+	1    3350 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1700 4200 1700
+Wire Wire Line
+	4200 1700 4200 1450
+Wire Wire Line
+	4200 1450 4550 1450
+Wire Wire Line
+	3250 2100 3250 2250
+Wire Wire Line
+	3250 2250 4300 2250
+Wire Wire Line
+	4300 2250 4300 1550
+Wire Wire Line
+	4300 1550 4550 1550
+Wire Wire Line
+	2850 1800 2700 1800
+Wire Wire Line
+	2700 1800 2700 2350
+Wire Wire Line
+	2700 2350 4400 2350
+Wire Wire Line
+	4400 2350 4400 1650
+Wire Wire Line
+	4400 1650 4550 1650
+$Comp
+L LM324 U1
+U 2 1 543A923C
+P 3400 3250
+F 0 "U1" H 3450 3450 60  0000 C CNN
+F 1 "LM324" H 3550 3050 50  0000 C CNN
+F 2 "" H 3400 3250 60  0000 C CNN
+F 3 "" H 3400 3250 60  0000 C CNN
+	2    3400 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U1
+U 3 1 543A9257
+P 3400 4700
+F 0 "U1" H 3450 4900 60  0000 C CNN
+F 1 "LM324" H 3550 4500 50  0000 C CNN
+F 2 "" H 3400 4700 60  0000 C CNN
+F 3 "" H 3400 4700 60  0000 C CNN
+	3    3400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM324 U1
+U 4 1 543A9272
+P 3400 5950
+F 0 "U1" H 3450 6150 60  0000 C CNN
+F 1 "LM324" H 3550 5750 50  0000 C CNN
+F 2 "" H 3400 5950 60  0000 C CNN
+F 3 "" H 3400 5950 60  0000 C CNN
+	4    3400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_6 P_VCO
+U 1 1 543A9299
+P 4950 3350
+F 0 "P_VCO" V 4900 3350 60  0000 C CNN
+F 1 "CONN_6" V 5000 3350 60  0000 C CNN
+F 2 "" H 4950 3350 60  0000 C CNN
+F 3 "" H 4950 3350 60  0000 C CNN
+	1    4950 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_6 P_VCA
+U 1 1 543A92A8
+P 4900 4650
+F 0 "P_VCA" V 4850 4650 60  0000 C CNN
+F 1 "CONN_6" V 4950 4650 60  0000 C CNN
+F 2 "" H 4900 4650 60  0000 C CNN
+F 3 "" H 4900 4650 60  0000 C CNN
+	1    4900 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_6 P_EG
+U 1 1 543A92B7
+P 4900 5900
+F 0 "P_EG" V 4850 5900 60  0000 C CNN
+F 1 "CONN_6" V 4950 5900 60  0000 C CNN
+F 2 "" H 4900 5900 60  0000 C CNN
+F 3 "" H 4900 5900 60  0000 C CNN
+	1    4900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5950 4550 5950
+Wire Wire Line
+	3300 5550 3300 5400
+Wire Wire Line
+	3300 5400 4400 5400
+Wire Wire Line
+	4400 5400 4400 5650
+Wire Wire Line
+	4400 5650 4550 5650
+$Comp
+L R R1
+U 1 1 543A9332
+P 3950 6600
+F 0 "R1" V 4030 6600 40  0000 C CNN
+F 1 "20" V 3957 6601 40  0000 C CNN
+F 2 "~" V 3880 6600 30  0000 C CNN
+F 3 "~" H 3950 6600 30  0000 C CNN
+	1    3950 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C1
+U 1 1 543A9341
+P 3950 6250
+F 0 "C1" H 3950 6350 40  0000 L CNN
+F 1 "50µ" H 3956 6165 40  0000 L CNN
+F 2 "~" H 3988 6100 30  0000 C CNN
+F 3 "~" H 3950 6250 60  0000 C CNN
+	1    3950 6250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3300 6350 3300 6600
+Wire Wire Line
+	3300 6600 3700 6600
+Wire Wire Line
+	3550 6600 3550 6250
+Wire Wire Line
+	3550 6250 3750 6250
+Connection ~ 3550 6600
+Wire Wire Line
+	4200 6600 4400 6600
+Wire Wire Line
+	4400 6600 4400 6150
+Wire Wire Line
+	4400 6150 4550 6150
+Wire Wire Line
+	4150 6250 4400 6250
+Connection ~ 4400 6250
+$EndSCHEMATC

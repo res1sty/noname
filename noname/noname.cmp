@@ -1,0 +1,52 @@
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = Sun 12 Oct 2014 04:52:12 PM CEST
+
+BeginCmp
+TimeStamp = /543A9341;
+Reference = C1;
+ValeurCmp = 50µ;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A92B7;
+Reference = P_EG1;
+ValeurCmp = CONN_6;
+IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A8A5E;
+Reference = P_LFO1;
+ValeurCmp = CONN_6;
+IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A92A8;
+Reference = P_VCA1;
+ValeurCmp = CONN_6;
+IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A9299;
+Reference = P_VCO1;
+ValeurCmp = CONN_6;
+IdModule  = SIL-6;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A9332;
+Reference = R1;
+ValeurCmp = 20;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /543A8CC9;
+Reference = U1;
+ValeurCmp = LM324;
+IdModule  = SO14E;
+EndCmp
+
+EndListe

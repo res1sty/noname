@@ -1,0 +1,165 @@
+(pcb /home/riot/STUFF/RESiSTY/SYNTH/noname/noname.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(22-Jun-2014 BZR 4027)-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (rect pcb 92708.7 -35558.7 137161 -82956.4)
+    )
+    (via "Via[0-1]_889:635_um" "Via[0-1]_889:0_um")
+    (rule
+      (width 254)
+      (clearance 254.1)
+      (clearance 254.1 (type default_smd))
+      (clearance 63.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component SO14E
+      (place U1 114300 -62230 front 0 (PN LM324))
+    )
+    (component SM0805
+      (place R1 102870 -53340 front 180 (PN 20))
+      (place C1 104140 -57150 front 270 (PN 50µ))
+    )
+    (component "SIL-6"
+      (place P_LFO1 114300 -39370 front 0 (PN CONN_6))
+      (place P_VCO1 133350 -62230 front 270 (PN CONN_6))
+      (place P_VCA1 115570 -81280 front 0 (PN CONN_6))
+      (place P_EG1 96520 -60960 front 90 (PN CONN_6))
+    )
+  )
+  (library
+    (image SO14E
+      (outline (path signal 203.2  -4826 1778  4826 1778))
+      (outline (path signal 203.2  4826 1778  4826 -2032))
+      (outline (path signal 203.2  4826 -2032  -4826 -2032))
+      (outline (path signal 203.2  -4826 -2032  -4826 1778))
+      (outline (path signal 203.2  -4826 508  -4064 508))
+      (outline (path signal 203.2  -4064 508  -4064 -508))
+      (outline (path signal 203.2  -4064 -508  -4826 -508))
+      (pin Rect[T]Pad_508x1143_um 1 -3810 -2794)
+      (pin Rect[T]Pad_508x1143_um 2 -2540 -2794)
+      (pin Rect[T]Pad_508x1143_um 3 -1270 -2794)
+      (pin Rect[T]Pad_508x1143_um 4 0 -2794)
+      (pin Rect[T]Pad_508x1143_um 5 1270 -2794)
+      (pin Rect[T]Pad_508x1143_um 6 2540 -2794)
+      (pin Rect[T]Pad_508x1143_um 7 3810 -2794)
+      (pin Rect[T]Pad_508x1143_um 8 3810 2540)
+      (pin Rect[T]Pad_508x1143_um 9 2540 2540)
+      (pin Rect[T]Pad_508x1143_um 10 1270 2540)
+      (pin Rect[T]Pad_508x1143_um 11 0 2540)
+      (pin Rect[T]Pad_508x1143_um 12 -1270 2540)
+      (pin Rect[T]Pad_508x1143_um 13 -2540 2540)
+      (pin Rect[T]Pad_508x1143_um 14 -3810 2540)
+    )
+    (image SM0805
+      (outline (path signal 99.06  -1524 -762  -1530.22 -801.245  -1548.26 -836.648  -1576.35 -864.745
+            -1611.76 -882.784  -1651 -889  -1690.24 -882.784  -1725.65 -864.745
+            -1753.74 -836.648  -1771.78 -801.245  -1778 -762  -1771.78 -722.755
+            -1753.74 -687.352  -1725.65 -659.255  -1690.24 -641.216  -1651 -635
+            -1611.76 -641.216  -1576.35 -659.255  -1548.26 -687.352  -1530.22 -722.755))
+      (outline (path signal 99.06  -508 -762  -1524 -762))
+      (outline (path signal 99.06  -1524 -762  -1524 762))
+      (outline (path signal 99.06  -1524 762  -508 762))
+      (outline (path signal 99.06  508 762  1524 762))
+      (outline (path signal 99.06  1524 762  1524 -762))
+      (outline (path signal 99.06  1524 -762  508 -762))
+      (pin Rect[T]Pad_889x1397_um 1 -952.5 0)
+      (pin Rect[T]Pad_889x1397_um 2 952.5 0)
+    )
+    (image "SIL-6"
+      (outline (path signal 304.8  -7620 -1270  -7620 1270))
+      (outline (path signal 304.8  -7620 1270  7620 1270))
+      (outline (path signal 304.8  7620 1270  7620 -1270))
+      (outline (path signal 304.8  7620 -1270  -7620 -1270))
+      (outline (path signal 304.8  -5080 -1270  -5080 1270))
+      (pin Rect[A]Pad_1397x1397_um 1 -6350 0)
+      (pin Round[A]Pad_1397_um 2 -3810 0)
+      (pin Round[A]Pad_1397_um 3 -1270 0)
+      (pin Round[A]Pad_1397_um 4 1270 0)
+      (pin Round[A]Pad_1397_um 5 3810 0)
+      (pin Round[A]Pad_1397_um 6 6350 0)
+    )
+    (padstack Round[A]Pad_1397_um
+      (shape (circle F.Cu 1397))
+      (shape (circle B.Cu 1397))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_508x1143_um
+      (shape (rect F.Cu -254 -571.5 254 571.5))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_889x1397_um
+      (shape (rect F.Cu -444.5 -698.5 444.5 698.5))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1397x1397_um
+      (shape (rect F.Cu -698.5 -698.5 698.5 698.5))
+      (shape (rect B.Cu -698.5 -698.5 698.5 698.5))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:635_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+    (padstack "Via[0-1]_889:0_um"
+      (shape (circle F.Cu 889))
+      (shape (circle B.Cu 889))
+      (attach off)
+    )
+  )
+  (network
+    (net "N-0000019"
+      (pins R1-1 C1-1)
+    )
+    (net "N-000002"
+      (pins R1-2 C1-2 P_EG1-6)
+    )
+    (net "N-0000020"
+      (pins U1-11 P_LFO1-2)
+    )
+    (net "N-0000021"
+      (pins U1-1 P_LFO1-1)
+    )
+    (net "N-0000027"
+      (pins U1-2 P_LFO1-3)
+    )
+    (net "N-000004"
+      (pins U1-14 P_EG1-4)
+    )
+    (net "N-000007"
+      (pins U1-4 P_EG1-1)
+    )
+    (class kicad_default "" "N-0000019" "N-000002" "N-0000020" "N-0000021"
+      "N-0000027" "N-000004" "N-000007"
+      (circuit
+        (use_via Via[0-1]_889:635_um)
+      )
+      (rule
+        (width 254)
+        (clearance 254.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
